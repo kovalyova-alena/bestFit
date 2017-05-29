@@ -1,10 +1,12 @@
 $(document).ready(function (e){
+    
 
-  $('.nav').on('mouseover', 'li', function (){
-      $(this).addClass('open');
-  });
+      $('.nav').on('mouseover', '.item-menu', function (){
+          $('.nav>li>a:focus').blur();
+          $(this).addClass('open');
+      });
 
-    $('.nav').on('mouseout', 'li', function (){
+    $('.nav').on('mouseout', '.item-menu', function (){
         $(this).removeClass('open');
     });
 
