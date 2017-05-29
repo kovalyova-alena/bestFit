@@ -40,8 +40,103 @@ ul {
     padding: 0;
 }
 
+body, html {
+    font-family: 'Archivo Narrow';
+}
+
 /* ===================== HEADER ======================*/
 
 .logo {
     width: 100%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.nav > li {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    background: #fff;
+
+}
+.nav > li:first-child > a {
+    border-left: 1px solid #e1e1e1;
+}
+
+.nav > li > a {
+    width: 100%;
+    color: #c2c2c2;
+    font-size: 15px;
+    border-right: 1px solid #e1e1e1;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 45px 0;
+}
+
+.item-menu:focus {
+    outline: none;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background: #d74340;
+    outline: none;
+    color: #fff;
+    border: transparent;
+}
+
+ .nav .open>a:focus, .nav .open>a:hover, .nav > li.open >a {
+     background-color: #d74340;
+     border: transparent;
+}
+
+
+
+.nav > li.open >a {
+    color: #fff;
+}
+
+.sub-indicator {
+    display: block;
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 8px auto 0;
+    overflow: hidden;
+    background: url('img/subArrow.png');
+}
+
+.active-item-menu .sub-indicator {
+    background-position: 0 18px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+}
+
+
+.nav > li.active-item-menu > a {
+    color: #fff;
+    border: 0;
+    background: #d74340;
+}
+
+.nav>li:hover .dropdown-menu {
+
+}
+
+.dropdown-menu {
+    width: 100%;
+    border: 0;
+    box-shadow: none;
 }

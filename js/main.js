@@ -1,3 +1,12 @@
-/**
- * Created by Alena on 10.04.2017.
- */
+$(document).ready(function (e){
+
+  $('.nav').on('mouseover', 'li', function (){
+      $(this).addClass('open');
+  });
+
+    $('.nav').on('mouseout', 'li', function (){
+        $(this).removeClass('open');
+    });
+
+
+});
