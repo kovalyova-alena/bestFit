@@ -45,7 +45,9 @@ body, html {
 }
 
 /* ===================== HEADER ======================*/
-
+header {
+    background: #FFFFFF;
+}
 .logo {
     width: 100%;
     max-width: 260px;
@@ -60,8 +62,6 @@ body, html {
     width: 100%;
     justify-content: space-between;
     text-align: center;
-    -moz-text-align-last: center;
-    text-align-last: center;
 }
 
 .nav > li {
@@ -150,7 +150,7 @@ body, html {
     padding: 15px 10px;
     text-transform: uppercase;
     color: #c2c2c2;
-    border-bottom: 1px solid #c2c2c2;
+    border-bottom: 1px solid #f3f3f3;
     font-weight: 700;
     white-space: normal;
     text-align: center;
@@ -180,13 +180,11 @@ body, html {
     height: inherit;
 }
 
-#navbar-collapse {
-    width: 75%;
-}
-
 
 @media (max-width: 767px) {
-
+    header {
+        box-shadow: 0 2px 20px rgba(0,0,0,0.3);;
+    }
     .logo {
         max-width: 200px;
     }
@@ -197,10 +195,6 @@ body, html {
 
     .navbar-brand {
         padding: 15px 0;
-    }
-
-    #navbar-collapse {
-        width: 100%;
     }
 
     .nav, .navbar {
@@ -221,11 +215,78 @@ body, html {
     }
 
     .nav > li > a {
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     .navbar-nav .open .dropdown-menu .dropdown-header, .navbar-nav .open .dropdown-menu>li>a {
         padding: 15px 15px 15px 25px;
+        border-bottom: 1px solid #fff;
     }
 
+    .sidebar {
+        position: fixed;
+        top: 80px;
+        height: 100%;
+        width: 300px;
+        max-width: 100%;
+        background: #fff;
+        right: -300px;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+
+    .nav-opened .sidebar{
+        right: 0;
+    }
+    .nav > li.active-item-menu > a,  .nav > li > a {
+        background: transparent;
+        color: #c2c2c2;
+        border-bottom: 1px solid rgba(194, 194, 194, 0.25);
+        padding-left: 20px;
+    }
+
+    .nav {
+        text-align: left;
+    }
+
+    .sub-indicator, .active-item-menu .sub-indicator {
+        width: 12px;
+        height: 11px;
+        right: -190px;
+        margin: -15px auto 0;
+        background-position:  bottom right;
+    }
+
+    .dropdown-menu>li>a {
+        text-align: left;
+    }
+    .nav > li.active-item-menu.open > a {
+        color: #fff;
+    }
+
+    .item-menu.open .sub-indicator {
+        background-position: 0px 18px;
+        height: 7px;
+        margin-top: -13px;
+    }
+
+    .overlay-sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: none;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+    .nav-opened .overlay-sidebar {
+        display: block;
+    }
+
+    .nav-opened .icon-bar {
+        background: #000;
+    }
 }
