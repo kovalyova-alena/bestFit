@@ -1,9 +1,19 @@
 $(document).ready(function (e){
 
+    //Menu onHover
     openMenuOnHover();
 
+    //bxSlider
+    $('.bxslider').bxSlider({
+        mode: 'fade',
+        autoControls: true,
+        controls: false,
+        autoHover: true
+    });
+
+
     $('.navbar-toggle').on('click', function () {
-        $('.navbar').toggleClass('nav-opened');
+        $('body').toggleClass('nav-opened');
     });
 
     $(window).resize(function(){

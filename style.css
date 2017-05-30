@@ -47,6 +47,11 @@ body, html {
 /* ===================== HEADER ======================*/
 header {
     background: #FFFFFF;
+    position: fixed;
+    left: 0;
+    top:0;
+    right: 0;
+    z-index: 999;
 }
 .logo {
     width: 100%;
@@ -86,6 +91,7 @@ header {
     text-decoration: none;
     margin: 0;
     padding: 45px 0;
+    height: 100%;
 }
 
 .item-menu:focus {
@@ -143,6 +149,7 @@ header {
     box-shadow: none;
     padding: 0;
     min-width: inherit;
+    border-radius: 0;
 }
 
 
@@ -154,6 +161,12 @@ header {
     font-weight: 700;
     white-space: normal;
     text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.dropdown-menu>li:last-child >a{
+    border-bottom: 0;
+    border-radius: 0;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
@@ -181,9 +194,114 @@ header {
 }
 
 
+/*========== SLIDER ============*/
+main {
+    margin-top: 110px;
+}
+
+.slider {
+    position: relative;
+    z-index: 2;
+}
+
+.slidesDescription {
+    position: absolute;
+    top: 33%;
+    left: 18%;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+    border-left: 5px solid #d74340;
+}
+
+.slidesDescription h2 {
+    font-size: 44px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+    display: block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.slidesDescription span {
+    color: #bfbfbf;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.35);
+}
+
+.customButton {
+    color: #fff;
+    padding: 12px 13px 11px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.slideLink {
+    background: #5e5e5e;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.35);
+    text-shadow: -1px -1px 1px rgba(0,0,0, 0.25);
+    font-size: 18px;
+}
+
+
+.bx-wrapper {
+    box-shadow: none;
+    border: 0;
+    max-height: 575px;
+    overflow: hidden;
+}
+
+
+.bx-wrapper .bx-pager {
+    position: absolute;
+    bottom: 20px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a{
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background:#e2001a;
+}
+
+.slide {
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide1 {
+    background-image: url("img/slider/slide4.jpg");
+}
+
+.slide2 {
+    background-image: url("img/slider/slide2.jpg");
+}
+.slide3 {
+    background-image: url("img/slider/slide3.jpg");
+}
+
+
+
+
+/*==============MEDIA ==========*/
+
 @media (max-width: 767px) {
     header {
-        box-shadow: 0 2px 20px rgba(0,0,0,0.3);;
+        box-shadow: 0 2px 20px rgba(0,0,0,0.3);
     }
     .logo {
         max-width: 200px;
@@ -232,7 +350,7 @@ header {
         background: #fff;
         right: -300px;
         transition: all 0.5s ease-in-out;
-        z-index: -1;
+        z-index: 0;
     }
 
     .nav-opened .sidebar{
@@ -272,14 +390,14 @@ header {
 
     .overlay-sidebar {
         position: fixed;
-        top: 0;
+        top: 89px;
         left: 0;
         right: 0;
         bottom: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.6);
         display: none;
-        z-index: -1;
+        z-index: 5;
         transition: all 0.3s ease-in-out;
     }
     .nav-opened .overlay-sidebar {
@@ -288,5 +406,31 @@ header {
 
     .nav-opened .icon-bar {
         background: #000;
+    }
+
+    .slidesDescription {
+        top: 10vh;
+        left: 20px;
+        right: 20px;
+    }
+
+    .slidesDescription h2 {
+        font-size: 28px;
+    }
+
+    .slidesDescription span {
+        font-size: 20px;
+    }
+
+    .slide {
+        height: calc(100vh - 85px);
+    }
+
+    .nav {
+        box-shadow: inset  0 1px 5px rgba(6,7,7,0.4);
+    }
+
+    main {
+        margin-top: 88px;
     }
 }
