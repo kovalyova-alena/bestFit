@@ -368,9 +368,213 @@ main {
     color: #fff;
 }
 
+/* ============ MAP ==============*/
+
+#map {
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+
+.text-content {
+    width: 50%;
+    height: 295px;
+    position: relative;
+    padding: 0 15px 70px 15px;
+    background: transparent url('img/map.svg') no-repeat center 40px;
+    background-size: 70%;
+    float: left;
+    height: 500px;
+
+}
+
+.map-title {
+    font-size: 48px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 900;
+    margin-top: 55px;
+}
+
+.map-sub-title {
+    font-weight: 500;
+}
+
+.bodytext {
+    line-height: 16px;
+    color: #666666;
+    font-size: 14px;
+    margin-top: 60px;
+}
+
+.legend {
+    position: relative;
+    padding-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+.studio-finder .legend:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: -20px;
+    margin-top: -25px;
+    width: 40px;
+    height: 80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.studio-finder .legend.default-marker:before {
+    background-image: url('img/blackMan.png');
+}
+
+.studio-finder .legend.new-marker:before {
+    background-image: url('img/whiteMan.png');
+}
+
+#studio-search {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+input.text.studio-search {
+    border: 1px solid #2d2d2d;
+    color: #666666;
+    height: 50px;
+    line-height: 15px;
+    font-size: 14px;
+    border-left: 0 none;
+    border-right: 0 none;
+    background: #ffffff;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.studio-finder input.submit, .studio-finder button.submit {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: 0 none;
+    outline: none;
+}
+
+.studio-finder input.submit:before, .studio-finder button.submit:before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent url('img/fancybox_sprite.png') no-repeat -235px 0;
+    width: 16px;
+    height: 18px;
+    margin-top: -9px;
+    margin-left: -8px;
+}
+.textBox, .imgBox {
+    float:left;
+}
+
+.textBox {
+    max-width: 150px;
+    padding-left: 10px;
+}
+
+.textLink {
+    color: #333333;
+    text-decoration: none;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 20px;
+    transition: 1s;
+}
+
+.textLink:hover {
+    text-decoration: none;
+    color: #d74340;
+}
+
+input.text.studio-search:focus {
+    outline: none;
+}
+
+
+/*============MEMBER ============*/
+.member {
+    background: #f6f6f6;
+}
+
+.memberTitle {
+    margin-top: 20%;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.memberDesc {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin-top: 7%;
+}
+
+.memberButton {
+    text-decoration: none;
+    display: inline-block;
+    background: #ffed00;
+    color: #333333;
+    border-radius: 3px;
+    border: 1px solid #efde00;
+    padding: 7px 18px;
+    text-align: left;
+    outline: 0 none;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 18px;
+    margin-top: 10%;
+}
+
+.memberButton:hover {
+    text-decoration: none;
+    background: #d74340;
+    border: 1px solid #d74340;
+    color: #fff;
+}
+
 
 /*==============MEDIA ==========*/
+@media (min-width: 1024px) {
+    .text-content {
+        padding: 0 30px 150px 100px;
+    }
+    .studio-finder input.text.studio-search {
+        height: 100px;
+        line-height: 79px;
+        padding-left: 100px;
+        border-bottom: 1px solid #2d2d2d;
+    }
+    #studio-search button.submit:before {
+        background-position: -235px -25px;
+        width: 24px;
+        height: 46px;
+        margin-top: 10px;
+        right: 29px;
+        left: auto;
+    }
 
+}
+@media (min-width: 768px) {
+    .text-content {
+        border-left: 1px solid #2d2d2d;
+    }
+    input.text.studio-search {
+        font-size: 20px;
+        padding-left: 50px;
+        border-bottom: 0 none;
+    }
+}
 @media (max-width: 767px) {
     header {
         box-shadow: 0 2px 20px rgba(0,0,0,0.3);

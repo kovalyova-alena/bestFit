@@ -5,16 +5,10 @@ $(document).ready(function (e){
 
     //bxSlider
     $('.bxslider').bxSlider({
-        captions: true,
-        autoStart: true,
         mode: 'fade',
-        autoControls: true,
         touchEnabled: true,
         oneToOneTouch: true,
         controls: false,
-        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
-            console.log(oldIndex, newIndex);
-        }
     });
 
 
