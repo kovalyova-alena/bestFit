@@ -5,11 +5,18 @@ $(document).ready(function (e){
 
     //bxSlider
     $('.bxslider').bxSlider({
+        captions: true,
+        autoStart: true,
         mode: 'fade',
         autoControls: true,
+        touchEnabled: true,
+        oneToOneTouch: true,
         controls: false,
-        autoHover: true
+        onSlideBefore: function ($slideElement, oldIndex, newIndex) {
+            console.log(oldIndex, newIndex);
+        }
     });
+
 
 
     $('.navbar-toggle').on('click', function () {
@@ -19,6 +26,8 @@ $(document).ready(function (e){
     $(window).resize(function(){
             openMenuOnHover();
     });
+
+
 
 
 

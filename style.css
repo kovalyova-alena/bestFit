@@ -38,6 +38,7 @@
 ul {
     margin:0;
     padding: 0;
+    list-style: none;
 }
 
 body, html {
@@ -242,6 +243,12 @@ main {
     border-radius: 3px;
 }
 
+.customButton:hover, .customButton:active, .customButton:focus {
+    background: #d74340;
+    text-decoration: none;
+    color: #fff;
+}
+
 .slideLink {
     background: #5e5e5e;
     box-shadow: 1px 1px 1px rgba(0,0,0, 0.35);
@@ -255,6 +262,7 @@ main {
     border: 0;
     max-height: 575px;
     overflow: hidden;
+    margin-bottom: 0;
 }
 
 
@@ -278,23 +286,87 @@ main {
 }
 
 .slide {
-    height: 500px;
+    height: 580px;
     background-size: cover;
     background-position: center center;
 }
 
 .slide1 {
-    background-image: url("img/slider/slide4.jpg");
-}
-
-.slide2 {
-    background-image: url("img/slider/slide2.jpg");
-}
-.slide3 {
     background-image: url("img/slider/slide3.jpg");
 }
 
+.slide2 {
+    background-image: url("img/slider/slide1.jpg");
+}
+.slide3 {
+    background-image: url("img/slider/slide2.jpg");
+}
+.slide4 {
+    background-image: url("img/slider/slide4.jpg");
+}
 
+/*============= Carousel =============*/
+.carousel {
+    background: #e4e8ee;
+}
+
+.carousel-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.carousel-item {
+    width: 20%;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    background: #fff;
+    opacity: 0.65;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.titleCarousel {
+    color: #575757;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #d4d4d4;
+    line-height: 40px;
+    margin: 0;
+    padding: 8px 18px;
+}
+
+.descCarousel {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    color: #8c8c8c;
+    line-height: 22px;
+    margin: 0;
+    padding: 15px 18px;
+}
+
+.carousel-active-item {
+    opacity: 1;
+    background: #d74340;
+}
+
+.carousel-active-item .titleCarousel {
+    background: #262729;
+    color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.carousel-active-item .descCarousel {
+    color: #fff;
+}
 
 
 /*==============MEDIA ==========*/
