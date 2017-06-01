@@ -21,10 +21,6 @@ $(document).ready(function (e){
             openMenuOnHover();
     });
 
-
-
-
-
     function openMenuOnHover() {
         if ($(window).width() > 767) {
             $('.nav').on('mouseenter', '.item-menu', function (){
@@ -37,4 +33,9 @@ $(document).ready(function (e){
             });
         }
     }
+});
+
+$(window).scroll(function()  {
+     ($('body').scrollTop() !== 0) ? $('header').css('box-shadow', '0 0 20px rgba(0,0,0,0.6)') : $('header').css('box-shadow', 'none');
+
 });

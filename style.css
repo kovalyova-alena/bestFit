@@ -553,6 +553,7 @@ input.text.studio-search:focus {
 /*==============FOOTER ==========*/
 .footer {
     background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#a80017),color-stop(1,#e2001a));
+    overflow: hidden;
 }
 
 .socialContainer {
@@ -662,7 +663,8 @@ input.text.studio-search:focus {
 /* +++++++++++++++++ Fitness Plan Page +++++++++++++*/
 .breadCrumbs {
     background: #d74340;
-    padding: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .pageTitle {
@@ -701,6 +703,136 @@ input.text.studio-search:focus {
     text-transform: uppercase ;
 }
 
+.contentFitnessPlans {
+    background: #e4e8ee;
+    padding-top: 30px;
+}
+
+.imgPlans {
+    background: url("img/singleBg.png") bottom left no-repeat #262729;
+    padding: 20px 20px 40px 20px;
+}
+
+.singleThumb img, .postThumb {
+    border-bottom: 5px solid #d74340;
+    width: 100%;
+}
+.singleMeta {
+     padding: 25px 10px 0;
+     margin-bottom: 20px;
+ }
+
+.singleQuote {
+    padding: 20px 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    color: #b4b4b5;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.registrButton {
+    padding: 10px 20%;
+    background: #d74340;
+}
+
+.registrButton:hover {
+    background: #bb080a;
+}
+
+
+.pagePlans {
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #cdced0;
+    margin-bottom: 30px;
+}
+
+.pagePlans h2, .pagePlans h3{
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #535559;
+    margin-top: 0;
+}
+
+.pagePlans img {
+    float: left;
+    max-width: 50%;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.pagePlans p {
+    color: #828282;
+    line-height: 26px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.pagePlans h2 {
+    text-transform: uppercase;
+}
+
+.widgetPlans h3 {
+    margin-top: 0;
+    background: #262729;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #d74340;
+    line-height: 34px;
+}
+
+.plansRecommended {
+    margin-bottom: 20px;
+    border: 1px solid #cdced0;
+    padding: 10px;
+    background: #fff;
+}
+
+.postThumb {
+    border-bottom: 5px solid #d74340;
+    position: relative;
+}
+.postThumb img {
+    width: 100%;
+}
+
+
+.postDetails {
+    padding: 10px;
+}
+
+.postDetails p {
+    font-size: 14px;
+    color: #828282;
+    margin-bottom: 20px;
+}
+
+.widgetPlans .postTitle h1 {
+    color: #575757;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    line-height: 25px;
+    padding: 8px 18px 8px 0;
+    margin-top: 0;
+}
+
+.widgetPlans .postTitle:hover {
+    text-decoration: none;
+}
+
+.widgetButton {
+    background: #d74340;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 11px;
+}
 
 
 
