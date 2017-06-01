@@ -543,6 +543,117 @@ input.text.studio-search:focus {
     color: #fff;
 }
 
+/*==============FOOTER ==========*/
+.footer {
+    background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#a80017),color-stop(1,#e2001a));
+}
+
+.socialContainer {
+    padding-top: 30px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.icon-social {
+    background-image: url('img/sprite.svg');
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+}
+
+.footer-link {
+    padding-left: 50px;
+    color: #fff;
+    font: 900 18px/45px 'Archivo Narrow';
+    transition: 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-link:focus {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.icon-social{
+    height: 45px;
+    width: 45px;
+}
+
+.ic-fb-white {
+    background-position: 0 -130px;
+}
+
+.ic-fb-black {
+    background-position: 0 -173px;
+    opacity: 0;
+}
+
+.ic-insta-white {
+    background-position: -46px -129px;
+}
+
+.ic-insta-black {
+    background-position: -46px -175px;;
+    opacity: 0;
+}
+
+.ic-youtube-white {
+    background-position: -91px -129px;
+}
+
+.ic-youtube-black {
+    background-position: -91px -175px;;
+    opacity: 0;
+}
+
+.ic-shop-black {
+    background: url("img/online-shop.png") 0 -1px;
+    opacity: 0;
+    width: 60px;
+    height: 47px;
+}
+
+.ic-shop-white {
+    background: url("img/online-shop.png") 0 46px;
+    width: 60px;
+    height: 47px;
+}
+
+
+.footer-link:hover .icon-black {
+    opacity: 1;
+}
+
+.footer-link:hover .icon-white {
+    opacity: 0;
+}
+
+.bottomBar {
+    background: #262729;
+}
+
+.bottomBar-text {
+    color: #787b81;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 28px;
+    margin-top: 10px;
+}
+
+.bottomBar-text a {
+    text-transform: none;
+    text-decoration: none;
+    color: #c7c7c7;
+}
+
+
+
 
 /*==============MEDIA ==========*/
 @media (min-width: 1024px) {
@@ -564,6 +675,7 @@ input.text.studio-search:focus {
         left: auto;
     }
 
+
 }
 @media (min-width: 768px) {
     .text-content {
@@ -574,6 +686,20 @@ input.text.studio-search:focus {
         padding-left: 50px;
         border-bottom: 0 none;
     }
+
+    .socialContainer:before {
+        content: "";
+        width: 1500px;
+        height: 100px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -750px;
+        background-image: url("img/footer.svg");
+        background-size: 1500px auto;
+        opacity: 0.15;
+    }
+
 }
 @media (max-width: 767px) {
     header {
