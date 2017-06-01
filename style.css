@@ -45,6 +45,12 @@ body, html {
     font-family: 'Archivo Narrow';
 }
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 /* ===================== HEADER ======================*/
 header {
     background: #FFFFFF;
@@ -198,6 +204,7 @@ header {
 /*========== SLIDER ============*/
 main {
     margin-top: 110px;
+    flex: 1;
 }
 
 .slider {
@@ -650,6 +657,48 @@ input.text.studio-search:focus {
     text-transform: none;
     text-decoration: none;
     color: #c7c7c7;
+}
+
+/* +++++++++++++++++ Fitness Plan Page +++++++++++++*/
+.breadCrumbs {
+    background: #d74340;
+    padding: 30px 0;
+}
+
+.pageTitle {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    margin: 0;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+
+.breadCrumbBlock {
+    margin-top: 5px;
+}
+
+.breadCrumbBlock a {
+    padding: 0 17px 0 5px;
+    text-decoration: none;
+    background: url("img/breadcrumbArrow.png") no-repeat right 2px;
+    color: #fff;
+    opacity: 0.6;
+    -webkit-transition: all 60ms ease-in;
+    -moz-transition: all 60ms ease-in;
+    transition: all 60ms ease-in;
+    text-transform: uppercase;
+}
+
+.breadCrumbBlock span {
+    background: rgba(0,0,0,0.10);
+    padding: 5px 10px;
+    margin-left: 10px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    text-transform: uppercase ;
 }
 
 
