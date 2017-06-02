@@ -710,6 +710,7 @@ input.text.studio-search:focus {
 .contentFitnessPlans {
     background: #e4e8ee;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .imgPlans {
@@ -995,10 +996,9 @@ input.text.studio-search:focus {
 }
 .priceTabs {
     position: relative;
-    display: inline-block;
-    width:100%;
+    display: flex;
+    justify-content: center;
     border-bottom: 1px solid #2d2d2d;
-    padding-left: 20%;
     background: #fff;
 }
 
@@ -1121,6 +1121,53 @@ input.text.studio-search:focus {
     text-decoration: underline;
 }
 
+.rowKindSport {
+    display: flex;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 20px;
+    background: #fff;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+}
+
+.tablePrice .rowKindSport:first-child {
+    border-top: 1px solid #d8d8d8;
+}
+
+.tablePrice {
+    margin-top: 30px;
+}
+
+.textPrice, .imgPrice {
+    align-self: center;
+}
+
+.textPrice p {
+    font-size: 26px;
+    font-weight: 900;
+    color: #333333;
+}
+
+.monthPrice p, .costPrice p {
+    color: #d74340;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.costPrice p{
+    color: #333333;
+}
+
+.legend:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
 /*==============MEDIA ==========*/
 
 @media (min-width: 1024px) {
@@ -1140,6 +1187,10 @@ input.text.studio-search:focus {
         margin-top: 10px;
         right: 29px;
         left: auto;
+    }
+
+    .map-title {
+        font-size: 38px;
     }
 
 
@@ -1169,6 +1220,10 @@ input.text.studio-search:focus {
 
     .studioPage .caption-title, .studioPage .caption-description {
         font-size: 45px;
+    }
+
+    .text-content {
+        padding:0 30px 100px 30px;
     }
 
 }
@@ -1295,12 +1350,12 @@ input.text.studio-search:focus {
         font-size: 20px;
     }
 
-    .slide {
+    .slider .slide {
         height: calc(100vh - 85px);
     }
 
     .nav {
-        box-shadow: inset  0 1px 5px rgba(6,7,7,0.4);
+        border: 1px solid rgba(194, 194, 194, 0.25)
     }
 
     main {
@@ -1310,6 +1365,72 @@ input.text.studio-search:focus {
     .studioPage {
         height: 83vh;
     }
+
+    .rowKindSport {
+        display: block;
+    }
+
+    .textPrice, .imgPrice {
+        text-align: center;
+    }
+
+    .tabTitle {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .memberButton {
+        margin-bottom: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .memberTitle {
+        margin-top: 7%;
+        font-size: 30px;
+    }
+    .socialContainer > div {
+        margin-top: 20px;
+    }
+
+    #map, .text-content {
+        width: 100%;
+    }
+
+    .bottomBar-text {
+        text-align: center;
+    }
+
+    .socialContainer {
+        padding-bottom: 50px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+    .map-title {
+        font-size: 30px;
+    }
+    .text-content {
+        border-left: 0;
+        border-bottom: 1px solid #2d2d2d;
+        background-size: 150%;
+    }
+
+    .text-content, #map {
+        height: 450px;
+    }
+
+    .legend {
+        display: block;
+        margin-top: 50px;
+    }
+
+    .breadCrumbBlock {
+        margin-top: 25px;
+        text-align: left;
+    }
+
 }
 
 
@@ -1318,4 +1439,11 @@ input.text.studio-search:focus {
         font-size: 60px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #map, .text-content {
+        width: 100%;
+    }
+}
+
 

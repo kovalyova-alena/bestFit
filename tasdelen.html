@@ -99,16 +99,16 @@
 
             <ul class="nav-pills priceTabs">
 
-                    <li class="active"><a href="#studio" data-toggle="tab">Übersicht</a></li>
-                    <li><a href="#price" data-toggle="tab">Preise</a></li>
+                    <li><a href="#studio" data-toggle="tab">Übersicht</a></li>
+                    <li  class="active"><a href="#price" data-toggle="tab">Preise</a></li>
 
             </ul>
 
             <!-- Tab panes -->
             <div class="tab-content container clearfix">
                     <!------------ Studio ---------->
-                    <div class="tab-pane  in active clearfix" id="studio">
-                        <article class="col-md-8">
+                    <div class="tab-pane clearfix" id="studio">
+                        <article class="col-md-8 col-sm-7">
                             <h1 class="tabTitle">
                                 Willkommen im Best fit Fitnessstudio
                                 <p class="sub-title-paragraph">Tasdelen</p>
@@ -119,7 +119,7 @@
                                 Zum Probetraining
                             </a>
                         </article>
-                        <aside class="col-md-4">
+                        <aside class="col-md-4 col-sm-5">
                                 <div id="studio-address" class="box" >
 
                                     <h4 class="titleAddress">
@@ -165,11 +165,91 @@
                     </div>
 
                     <!-- --------- Price --------- -->
-                    <div class="tab-pane clearfix" id="price">
-                        <h1 class="tabTitle">
-                            Unsere Preise für Bes fit
-                            <p class="sub-title-paragraph">Tasdelen</p>
-                        </h1>
+                    <div class="tab-pane in active clearfix" id="price">
+                        <article>
+                            <h1 class="tabTitle">
+                                Unsere Preise für Bes fit
+                                <p class="sub-title-paragraph">Tasdelen</p>
+                            </h1>
+                            <div class="tablePrice">
+                                <div class="row rowKindSport">
+                                    <div class="col-md-3 col-sm-3 cell imgPrice"><img src="img/icons/fitness.png" alt="fitness"></div>
+                                    <div class="col-md-3 col-sm-3 cell textPrice">
+                                        <p>Fitness</p></div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell monthPrice">
+                                        <p>1 ay</p>
+                                        <p>3 ay</p>
+                                        <p>6 ay</p>
+                                        <p>12 ay</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell costPrice">
+                                        <p>130TL</p>
+                                        <p>290TL</p>
+                                        <p>470TL</p>
+                                        <p>830TL</p>
+                                    </div>
+                                </div>
+                                <div class="row rowKindSport">
+                                    <div class="col-md-3 col-sm-3 cell imgPrice"><img src="img/icons/fitness.png" alt="fitness"></div>
+                                    <div class="col-md-3 col-sm-3 cell textPrice">
+                                        <p>Crossfit</p></div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell monthPrice">
+                                        <p>1 ay</p>
+                                        <p>3 ay</p>
+                                        <p>6 ay</p>
+                                        <p>12 ay</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell costPrice">
+                                        <p>100TL</p>
+                                        <p>240TL</p>
+                                        <p>400TL</p>
+                                        <p>720TL</p>
+                                    </div>
+                                </div>
+                                <div class="row rowKindSport">
+                                    <div class="col-md-3 col-sm-3 cell imgPrice"><img src="img/icons/fitness.png" alt="fitness"></div>
+                                    <div class="col-md-3  col-sm-3 cell textPrice">
+                                        <p>Boks/KickBoks</p></div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell monthPrice">
+                                        <p>1 ay</p>
+                                        <p>3 ay</p>
+                                        <p>6 ay</p>
+                                        <p>12 ay</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6  cell costPrice">
+                                        <p>150TL</p>
+                                        <p>350TL</p>
+                                        <p>600TL</p>
+                                        <p>1100TL</p>
+                                    </div>
+                                </div>
+                                <div class="row rowKindSport">
+                                    <div class="col-md-3  col-sm-3 col-xs-12 cell imgPrice"><img src="img/icons/fitness.png" alt="fitness"></div>
+                                    <div class="col-md-3 col-sm-3 col-xs-12  cell textPrice">
+                                        <p>Fitness</p></div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell monthPrice">
+                                        <p>1 ay</p>
+                                        <p>3 ay</p>
+                                        <p>6 ay</p>
+                                        <p>12 ay</p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-3 col-xs-6 cell costPrice">
+                                        <p>180TL</p>
+                                        <p>490TL</p>
+                                        <p>780TL</p>
+                                        <p>1300TL</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="text-center">
+                                <a href="/" class="memberButton studioButton">
+                                    Zum Probetraining
+                                </a>
+                            </div>
+
+                        </article>
                     </div>
 
 
@@ -182,10 +262,10 @@
 
     <section class="member">
         <div class="container">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <img src="img/member.jpg" alt="member">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-6">
                 <h2 class="memberTitle">
                     Ekibinin bir üyesi ol BestFit
                 </h2>
