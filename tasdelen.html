@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic|Oswald:400,300,700" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bxSlider/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>BestFit Tasdelen</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+
+        <nav class = "navbar" role = "navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logoBestFit" class="logo"></a>
+            </div>
+
+            <ul class = "nav navbar-nav sidebar">
+                <li class = "dropdown active-item-menu item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        BestFit
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "#">Üyelik Formu</a></li>
+                    </ul>
+                </li>
+                <li class="item-menu" >
+                    <a href = "studio.html" class = "">
+                        Stüdyo
+                    </a>
+                </li>
+                <li class = "dropdown item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        Fitness Plan
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "antreman.html">Antreman</a></li>
+                        <li><a href = "#">Pilates</a></li>
+                        <li><a href = "#">Beslenme</a></li>
+                        <li><a href = "#">İlham Kaynağı</a></li>
+                        <li><a href = "#">Benim Hedefim</a></li>
+                    </ul>
+
+                </li>
+                <li class = "dropdown item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        Hakkımızda
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "hakkımızda.html">Hakkımızda</a></li>
+                        <li><a href = "bestFit.html">Neden Bestfit</a></li>
+                    </ul>
+                </li>
+                <li class="item-menu" >
+                    <a href = "" class = "">
+                        Fighting
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="overlay-sidebar" data-dismiss="overlay-sidebar"></div>
+<main>
+    <section class="carouselStudio">
+        <div class="sliderCarousel">
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen1_big.jpg"><img data-slide-index="0" src="img/studio/tasdelen1.jpg" alt="" class="bx-pager-link"></a></div>
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen2_big.jpg"><img data-slide-index="1" src="img/studio/tasdelen2.jpg" alt="" class="bx-pager-link"></a></div>
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen3_big.jpg"><img data-slide-index="2" src="img/studio/tasdelen3.jpg" alt="" class="bx-pager-link"></a></div>
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen4_big.jpg"><img data-slide-index="3" src="img/studio/tasdelen4.jpg" alt="" class="bx-pager-link"></a></div>
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen5_big.jpg"><img data-slide-index="4" src="img/studio/tasdelen5.jpg" alt="" class="bx-pager-link"></a></div>
+            <div class="slide"><a data-fancybox="gallery" href="img/studio/tasdelen6_big.jpg"><img data-slide-index="5" src="img/studio/tasdelen6.jpg" alt="" class="bx-pager-link"></a></div>
+        </div>
+    </section>
+
+    <section class="price">
+        <!-- Nav tabs -->
+
+            <ul class="nav-pills priceTabs">
+
+                    <li class="active"><a href="#studio" data-toggle="tab">Übersicht</a></li>
+                    <li><a href="#price" data-toggle="tab">Preise</a></li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content container clearfix">
+                    <!------------ Studio ---------->
+                    <div class="tab-pane  in active clearfix" id="studio">
+                        <article class="col-md-8">
+                            <h1 class="tabTitle">
+                                Willkommen im Best fit Fitnessstudio
+                                <p class="sub-title-paragraph">Tasdelen</p>
+                            </h1>
+                            <p class="simpleParagraph">Wenn Du aktiv leben willst, bietet Dir Dein clever fit Pirna die besten Voraussetzungen. Mach es Dir einfach mit clever fit und trainiere Deinen ganzen Körper. Gerne auch mit professionell erstelltem Trainingsplan. Flexible Öffnungszeiten, modernste Trainingsgeräte und ausgezeichnete Trainer garantieren Deinen persönlichen Erfolg.
+                            </p>
+                            <a href="/" class="memberButton studioButton">
+                                Zum Probetraining
+                            </a>
+                        </article>
+                        <aside class="col-md-4">
+                                <div id="studio-address" class="box" >
+
+                                    <h4 class="titleAddress">
+                                        <span class="icon-headline">BestFit<span class="icon icon-map"></span></span>
+                                        Tasdelen
+                                    </h4>
+
+                                    <p class="address simpleParagraph">Longuyoner Str. 1<br>01796 Pirna</p>
+
+                                    <p class="telephone simpleParagraph">
+                                        Telefon:
+                                        <a href="tel:+49035015998877">+49 (0)3501 5998877</a><br>
+                                        E-Mail:
+                                        <a href="">studio@.best-fit.com</a>
+
+                                    </p>
+                                    <p class="simpleParagraph">
+                                        <a target="_blank" href="https://www.google.com/maps?q=clever%20fit%20Pirna%2C%20Longuyoner%20Str.%201%2C%2001796%20Pirna&amp;ll=50.951182,13.9515&amp;z=17">
+                                            In Google Maps öffnen
+                                        </a>
+                                    </p>
+                                </div>
+                            <div id="studio-openings" class="box">
+                                <h4 class="icon-headline titleAddress">
+                                    Öffnungszeiten
+                                    <span class="icon icon-clock"></span>
+                                </h4>
+                                <table class="table openings">
+                                    <tbody><tr>
+                                        <td class="workingDays">Mo - Fr</td>
+                                        <td class="timeWorking">07:00 - 22:00 Uhr</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="weekendDays">Sa So</td>
+                                        <td class="timeWeekend">10:00 - 16:00 Uhr</td>
+                                    </tr>
+
+                                    </tbody></table>
+                            </div>
+                        </aside>
+
+                    </div>
+
+                    <!-- --------- Price --------- -->
+                    <div class="tab-pane clearfix" id="price">
+                        <h1 class="tabTitle">
+                            Unsere Preise für Bes fit
+                            <p class="sub-title-paragraph">Tasdelen</p>
+                        </h1>
+                    </div>
+
+
+            </div>
+
+
+
+
+    </section>
+
+    <section class="member">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="img/member.jpg" alt="member">
+            </div>
+            <div class="col-md-6">
+                <h2 class="memberTitle">
+                    Ekibinin bir üyesi ol BestFit
+                </h2>
+                <p class="memberDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eos quibusdam sit tenetur. Accusamus, aspernatur atque blanditiis consequatur cum in inventore itaque labore minus molestiae, obcaecati officiis repellat suscipit voluptates.</p>
+                <a href="/" class="memberButton">
+                    Özgeçmişinizi göndermek
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container socialContainer">
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="facebook footer-link">
+                <span class="icon-social icon-white ic-fb-white"></span>
+                <span class="icon-social icon-black ic-fb-black"></span>
+                Facebook
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="instagram footer-link">
+                <span class="icon-social icon-white ic-insta-white"></span>
+                <span class="icon-social icon-black ic-insta-black"></span>
+                Instagram
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="youtube footer-link">
+                <span class="icon-social icon-white ic-youtube-white"></span>
+                <span class="icon-social icon-black ic-youtube-black"></span>
+                YouTube
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="onlineShop footer-link">
+                <span class="icon-social icon-white ic-shop-white"></span>
+                <span class="icon-social icon-black ic-shop-black"></span>
+                Online Shop
+            </a>
+        </div>
+    </div>
+    <div class="bottomBar clearfix">
+        <div class="container">
+            <div class="col-md-9">
+                <p class="bottomBar-text">REGISTERED ®BESTFIT 2015. TÜM HAKLARI SAKLIDIR.</p>
+            </div>
+            <div class="col-md-3">
+                <p class="bottomBar-text">DESIGNED BY <a href="">BestFit.</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="lib/fancybox/jquery.fancybox.min.js"></script>
+<script src="lib/bxSlider/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

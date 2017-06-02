@@ -273,12 +273,12 @@ main {
 }
 
 
-.bx-wrapper .bx-pager {
+.slider .bx-wrapper .bx-pager {
     position: absolute;
     bottom: 20px;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a{
+.slider .bx-wrapper .bx-pager.bx-default-pager a{
     width: 16px;
     height: 16px;
     border-radius: 8px;
@@ -288,11 +288,11 @@ main {
 }
 
 
-.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+.slider .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
     background:#e2001a;
 }
 
-.slide {
+.slider .slide {
     height: 580px;
     background-size: cover;
     background-position: center center;
@@ -550,6 +550,10 @@ input.text.studio-search:focus {
     color: #fff;
 }
 
+.member img {
+    width: 100%;
+}
+
 /*==============FOOTER ==========*/
 .footer {
     background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#a80017),color-stop(1,#e2001a));
@@ -740,14 +744,14 @@ input.text.studio-search:focus {
 }
 
 
-.pagePlans {
+.pageContent {
     background: #fff;
     padding: 25px;
     border: 1px solid #cdced0;
     margin-bottom: 30px;
 }
 
-.pagePlans h2, .pagePlans h3{
+.pageContent h2, .pageContent h3{
     font-size: 21px;
     line-height: 30px;
     font-weight: 600;
@@ -755,7 +759,7 @@ input.text.studio-search:focus {
     margin-top: 0;
 }
 
-.pagePlans img {
+.pageContent img {
     float: left;
     max-width: 50%;
     padding-right: 20px;
@@ -763,14 +767,14 @@ input.text.studio-search:focus {
     padding-top: 10px;
 }
 
-.pagePlans p {
+.pageContent p {
     color: #828282;
     line-height: 26px;
     font-size: 16px;
     letter-spacing: 0.5px;
 }
 
-.pagePlans h2 {
+.pageContent h2 {
     text-transform: uppercase;
 }
 
@@ -834,9 +838,291 @@ input.text.studio-search:focus {
     font-size: 11px;
 }
 
+.widgetBestFit h3 {
+    margin-bottom: 0;
+}
 
+.widgetBestFit p {
+    line-height: 24px;
+    color: #828282;
+}
+
+.widgetBestFit a, .widgetBestFit a:focus, .widgetBestFit a:hover, .widgetBestFit:visited {
+    color: #26a77b;
+    text-decoration: underline;
+}
+
+.asideTextBestFit {
+    background: #fff;
+    padding: 20px 20px 10px 20px;
+}
+
+.pageBestFit blockquote {
+    background: #f3f5f8;
+    padding: 20px;
+    border-left: 3px solid #d74340;
+    margin: 30px 0;
+    font-size: 17px;
+    line-height: 24px;
+    color: #777;
+    font-style: italic;
+
+}
+
+
+/* +++++++++++++++++ STUDIO PAGE +++++++++++++++*/
+.studioPage {
+    height: 600px;
+    overflow: hidden;
+    background: url("img/studioAndPrices.jpg");
+    background-size: cover;
+    border-bottom: 1px solid #2d2d2d;
+    position: relative;
+}
+
+.studioPage .caption {
+    position: absolute;
+    bottom: 20%;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    transform-origin: left top;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -o-transform-origin: left top;
+    -ms-transform-origin: left top;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    left: 15%;
+}
+
+.studioPage .caption-title, .studioPage .caption-description {
+    color: #ffffff;
+    padding: 0 5px;
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 400;
+    font-style: italic;
+    white-space: nowrap;
+    line-height: 125%;
+}
+
+.studioPage .caption-description {
+    background: #9e1915;
+    margin-left: 10px;
+}
+
+.studioPage .caption-title {
+    background: #e2001a;
+}
+
+.studioPage .caption-title p, .studioPage .caption-description p {
+    font-weight: 900;
+}
+
+.studioPage .caption-title, .studioPage .caption-description {
+    font-size: 22px;
+}
+
+.carouselStudio  {
+    border: 1px solid #333333;
+}
+
+.carouselStudio .slide {
+    border-right: 1px solid #333333;
+}
+
+.carouselStudio img {
+    width: 100%;
+}
+
+.carouselStudio a[data-fancybox="gallery" ]:hover:before, .carouselStudio a[data-fancybox="gallery" ]:active:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: #000000;
+    z-index: 100;
+}
+
+.carouselStudio a[data-fancybox="gallery" ]:focus {
+    outline: none;
+}
+
+.carouselStudio a[data-fancybox="gallery" ]:active:before {
+    opacity: 0.6;
+}
+
+.carouselStudio a[data-fancybox="gallery" ]:hover:after, .carouselStudio a[data-fancybox="gallery" ]:active:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 86px;
+    height: 107px;
+    margin-top: -54px;
+    margin-left: -43px;
+    background: transparent url('img/fancybox_sprite.png') no-repeat -130px 0;
+    z-index: 200;
+}
+
+.carouselStudio .bx-prev:before{
+    content: '';
+    width: 30px;
+    height: 70px;
+    background: #000;
+}
+
+
+.carouselStudio .bx-wrapper .bx-prev {
+    background-position: 0 -34px;
+}
+
+.carouselStudio .bx-wrapper .bx-next {
+    background-position: -43px -34px;
+}
+
+.price {
+    background: #f6f6f6;
+    border-bottom: 1px solid #2d2d2d;
+    padding-bottom: 3%;
+}
+.priceTabs {
+    position: relative;
+    display: inline-block;
+    width:100%;
+    border-bottom: 1px solid #2d2d2d;
+    padding-left: 20%;
+    background: #fff;
+}
+
+
+.priceTabs li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.priceTabs li a {
+    display: inline-block;
+    width: auto;
+    height: 65px;
+    line-height: 65px;
+    font-size: 20px;
+    padding: 0;
+    color: #333333;
+}
+
+.simpleParagraph {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #666666;
+    margin-top: 3%;
+}
+
+.studioButton {
+    margin-top: 3%;
+}
+
+
+
+
+.priceTabs>li.active>a, .priceTabs>li.active>a:focus, .priceTabs>li.active>a:hover, .priceTabs>li>a:hover {
+    text-decoration: none;
+    color: #d74340;
+    background: transparent;
+}
+
+.tabTitle {
+    font-size: 48px;
+    color: #333333;
+    margin-top: 0;
+}
+
+.price .tab-pane {
+    padding-top: 50px;
+
+}
+
+.sub-title-paragraph {
+    font-weight: 900;
+    padding-top: 10px;
+}
+
+.box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 30px 20px 30px 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+
+}
+
+.price .icon {
+    width: 2em;
+    height: 2em;
+    display: inline-block;
+    background: transparent url('img/sprite.svg') no-repeat;
+    background-size: 33.125em 31.250em;
+    position: absolute;
+}
+
+.price .icon.icon-map {
+    background-position: -2em 0;
+}
+
+.box h4 .icon-headline .icon{
+    top: -4px;
+    right: 0;
+}
+
+ .box h4 .icon-clock.icon {
+     top:-10px;
+     right: 0;
+     background-position: -72px 0px;
+  }
+
+.box h4 {
+    position: relative;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    border-top: 0;
+    padding: 0;
+}
+
+.titleAddress {
+    font-weight: 900;
+    font-size: 18px;
+    font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+.titleAddress span {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.box .simpleParagraph {
+    letter-spacing: 1px;
+}
+
+.box .simpleParagraph a {
+    color: #666;
+    text-decoration: underline;
+}
 
 /*==============MEDIA ==========*/
+
 @media (min-width: 1024px) {
     .text-content {
         padding: 0 30px 150px 100px;
@@ -879,6 +1165,10 @@ input.text.studio-search:focus {
         background-image: url("img/footer.svg");
         background-size: 1500px auto;
         opacity: 0.15;
+    }
+
+    .studioPage .caption-title, .studioPage .caption-description {
+        font-size: 45px;
     }
 
 }
@@ -1016,4 +1306,16 @@ input.text.studio-search:focus {
     main {
         margin-top: 88px;
     }
+
+    .studioPage {
+        height: 83vh;
+    }
 }
+
+
+@media (min-width: 1500px){
+    .studioPage .caption-title, .studioPage .caption-description {
+        font-size: 60px;
+    }
+}
+

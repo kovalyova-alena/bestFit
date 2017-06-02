@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic|Oswald:400,300,700" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bxSlider/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>BestFit Studio</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+
+        <nav class = "navbar" role = "navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logoBestFit" class="logo"></a>
+            </div>
+
+            <ul class = "nav navbar-nav sidebar">
+                <li class = "dropdown active-item-menu item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        BestFit
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "#">Üyelik Formu</a></li>
+                    </ul>
+                </li>
+                <li class="item-menu" >
+                    <a href = "studio.html" class = "">
+                        Stüdyo
+                    </a>
+                </li>
+                <li class = "dropdown item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        Fitness Plan
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "antreman.html">Antreman</a></li>
+                        <li><a href = "#">Pilates</a></li>
+                        <li><a href = "#">Beslenme</a></li>
+                        <li><a href = "#">İlham Kaynağı</a></li>
+                        <li><a href = "#">Benim Hedefim</a></li>
+                    </ul>
+
+                </li>
+                <li class = "dropdown item-menu">
+                    <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">
+                        Hakkımızda
+                        <span class = "sub-indicator"></span>
+                    </a>
+
+                    <ul class = "dropdown-menu">
+                        <li><a href = "hakkımızda.html">Hakkımızda</a></li>
+                        <li><a href = "bestFit.html">Neden Bestfit</a></li>
+                    </ul>
+                </li>
+                <li class="item-menu" >
+                    <a href = "" class = "">
+                        Fighting
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="overlay-sidebar" data-dismiss="overlay-sidebar"></div>
+<main>
+    <section class="studioPage">
+        <div class="caption">
+            <div class="inner">
+                <div class="caption-title" data-u="caption"><p>Dein Studio. Dein Komfort.&nbsp;</p></div>
+
+                <br><div class="caption-description" data-u="caption">
+                <p>Dein Preis.&nbsp;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="studio-finder clearfix">
+        <div id="map">
+        </div>
+
+        <div class="text-content">
+            <h2 class="map-title">
+                <p class="map-sub-title">Studios in Istanbul</p>
+                Und einmal in Deiner Nähe.
+            </h2>
+            <p class="bodytext legend-wrap">
+                <span class="legend default-marker">BestFit oyunculuk stüdyosu</span>
+                <span class="legend new-marker">Planlanan stüdyo</span>
+            </p>
+            <div id="studio-search" >
+                <form name="studio-form">
+                    <input type="text" class="text studio-search" name="address" value="" placeholder="PLZ/Ort eingeben!">
+                    <button type="submit" class="submit"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="member">
+        <div class="container">
+            <div class="col-md-6">
+                <img src="img/member.jpg" alt="member">
+            </div>
+            <div class="col-md-6">
+                <h2 class="memberTitle">
+                    Ekibinin bir üyesi ol BestFit
+                </h2>
+                <p class="memberDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eos quibusdam sit tenetur. Accusamus, aspernatur atque blanditiis consequatur cum in inventore itaque labore minus molestiae, obcaecati officiis repellat suscipit voluptates.</p>
+                <a href="/" class="memberButton">
+                    Özgeçmişinizi göndermek
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container socialContainer">
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="facebook footer-link">
+                <span class="icon-social icon-white ic-fb-white"></span>
+                <span class="icon-social icon-black ic-fb-black"></span>
+                Facebook
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="instagram footer-link">
+                <span class="icon-social icon-white ic-insta-white"></span>
+                <span class="icon-social icon-black ic-insta-black"></span>
+                Instagram
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="youtube footer-link">
+                <span class="icon-social icon-white ic-youtube-white"></span>
+                <span class="icon-social icon-black ic-youtube-black"></span>
+                YouTube
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="https://www.facebook.com/cleverfit" target="_blank" class="onlineShop footer-link">
+                <span class="icon-social icon-white ic-shop-white"></span>
+                <span class="icon-social icon-black ic-shop-black"></span>
+                Online Shop
+            </a>
+        </div>
+    </div>
+    <div class="bottomBar clearfix">
+        <div class="container">
+            <div class="col-md-9">
+                <p class="bottomBar-text">REGISTERED ®BESTFIT 2015. TÜM HAKLARI SAKLIDIR.</p>
+            </div>
+            <div class="col-md-3">
+                <p class="bottomBar-text">DESIGNED BY <a href="">BestFit.</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: new google.maps.LatLng(41.010936, 28.977154),
+            styles: [
+                {
+                    "featureType": "administrative",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": "-100"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.province",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": 65
+                        },
+                        {
+                            "visibility": "on"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "lightness": "50"
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": "-100"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        },
+                        {
+                            "hue": "#ff0000"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "lightness": "30"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "lightness": "40"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [
+                        {
+                            "saturation": -100
+                        },
+                        {
+                            "visibility": "simplified"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "hue": "#ffff00"
+                        },
+                        {
+                            "lightness": -25
+                        },
+                        {
+                            "saturation": -97
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "lightness": -25
+                        },
+                        {
+                            "saturation": -100
+                        }
+                    ]
+                }
+            ]
+        });
+
+        var iconBase = 'img/';
+        var icons = {
+            active: {
+                icon: iconBase + 'blackMan.png'
+            },
+            future: {
+                icon: iconBase + 'whiteMan.png'
+            }
+        };
+
+        var contentString = '<div id="content">' +
+                '<div id="siteNotice">' +
+                '</div>' +
+                '<div id="bodyContent">' +
+                '<div class="imgBox"><a href="" class="imgLink">' +
+                '<img src="img/mapImg.jpg" class="imgInfoBox"></a></div>' +
+                '<div class="textBox">' +
+                '<a href="" class="textLink"></a></div>' +
+                '</div>' +
+                '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var features = [
+            {
+                position: new google.maps.LatLng(41.0291765, 29.2312968),
+                type: 'active',
+                title: 'Taşdelen Mahallesi, Sırrı Çelik Blv. 8A, 34788 Çekmeköy/İstanbul',
+                href: 'https://www.google.com/maps/place/BEST+FIT+Spor+Salonu/@41.0292663,29.2325271,18z/data=!4m12!1m6!3m5!1s0x14cad1fdf5ef0859:0xdc0f41bfb523da68!2sBEST+FIT+Spor+Salonu!8m2!3d41.0293379!4d29.2334688!3m4!1s0x14cad1fdf5ef0859:0xdc0f41bfb523da68!8m2!3d41.0293379!4d29.2334688'
+            }, {
+                position: new google.maps.LatLng(41.030527, 28.670298),
+                type: 'future',
+                title: 'Pınar Mahallesi, 19 Mayıs Bulvarı & 1260. Sok. 1 HA, 34513 Esenyurt/İstanbul',
+                href: 'https://www.google.com/maps/place/Best+Fit+Spor+Salonu/@41.0301999,28.6703152,3a,75y,90t/data=!3m8!1e2!3m6!1sGBHLgaQa1U44Vxjq-RRr9IL7gKsPgYLffHsvY5_jnwHVQ7CmGjYlz8S-WOugwMQ!2e9!3e27!6s%2F%2Flh3.googleusercontent.com%2FGBHLgaQa1U44Vxjq-RRr9IL7gKsPgYLffHsvY5_jnwHVQ7CmGjYlz8S-WOugwMQ%3Dw203-h114-k-no!7i4128!8i2322!4m5!3m4!1s0x14b55f584d434107:0xa1a5d7f49bbb3d5d!8m2!3d41.0302286!4d28.6703034!6m1!1e1'
+            }
+        ];
+
+        // Create markers.
+        features.forEach(function (feature) {
+            var marker = new google.maps.Marker({
+                position: feature.position,
+                icon: icons[feature.type].icon,
+                map: map,
+                title: feature.title,
+                href: feature.href
+            });
+
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+                $('.textLink').html(marker.title);
+                $('.imgLink, .textLink').attr('href', marker.href);
+
+            });
+        });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCIjhkFzpiD_-Ue0ivhlPTQGehdT6tzPgk&callback=initMap"> </script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="lib/fancybox/jquery.fancybox.min.js"></script>
+<script src="lib/bxSlider/jquery.bxslider.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
